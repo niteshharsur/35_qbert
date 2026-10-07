@@ -21,8 +21,8 @@ def cube_palette(level):
 
 
 def on_cube_completed(cell):
-    """Called when a cube first reaches its target colour; add a flash, sound, or bonus here."""
-    pass
+    """Called when a cube first reaches its target colour."""
+    print(f"Cube completed at {cell}!")
 
 
 def bonus_life_threshold():
