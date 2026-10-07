@@ -24,11 +24,9 @@ def on_cube_completed(cell):
     """Called when a cube first reaches its target colour."""
     print(f"Cube completed at {cell}!")
 
-
 def bonus_life_threshold():
-    """Return a score value at which the player earns an extra life, or None to disable bonus lives."""
-    pass
-
+    """Return the score threshold for earning a bonus life."""
+    return 1000
 
 def cube_center(row, col):
     return pygame.Vector2(WIDTH / 2 + (col - row / 2) * CUBE_W, 90 + row * CUBE_H)
